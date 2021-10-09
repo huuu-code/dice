@@ -35,7 +35,7 @@ class Button:
 		m_x, m_y = pos
 		btn_x, btn_y = self.pos
 		btn_w, btn_h = self.size
-		if btn_x <= m_x <= btn_x + btn_w and btn_y <= m_y <= btn_y + btn_h:
+		if btn_x <= m_x <= btn_x + btn_w and btn_y <= m_y <= btn_y + btn_h: # 判断鼠标位置是否在按钮范围内
 			self.bg_color = (200, 200, 200)
 			self.draw1 ( window )
 			pygame.display.update ( )
@@ -49,7 +49,7 @@ class Button:
 		m_x, m_y = pos
 		btn_x, btn_y = self.pos
 		btn_w, btn_h = self.size
-		if btn_x <= m_x <= btn_x + btn_w and btn_y <= m_y <= btn_y + btn_h:
+		if btn_x <= m_x <= btn_x + btn_w and btn_y <= m_y <= btn_y + btn_h: # 判断鼠标位置是否在按钮范围内
 			self.bg_color = self.old_color
 			self.draw1 ( window )
 			pygame.display.update ( )
